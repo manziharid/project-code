@@ -1,8 +1,6 @@
-var numbers = [1, 2, 3];
-for (let num of numbers) {
-    console.log(num);
-}
+var iterator = numbers[Symbol.iterator]();
 
-// 1
-// 2
-// 3
+console.log(iterator.next()); // Object {value: 1, done: false}
+console.log(iterator.next()); // Object {value: 2, done: false}
+console.log(iterator.next()); // Object {value: 3, done: false}
+console.log(iterator.next()); // Object {value: undefined, done: true}
