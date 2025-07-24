@@ -1,6 +1,7 @@
-let odd  = [1, 3],
-    even = [2, 4];
-let all = odd.concat(even);
-console.log(all); // [1, 3, 2, 4]
-let extras = all.concat(5);
-console.log(extras); // [1, 3, 2, 4, 5]
+let list = {
+    0: 'JavaScript',
+    1: 'Symbol',
+    length: 2
+};
+let message = ['Learning'].concat(list);
+console.log(message); // ["Learning", Object]
