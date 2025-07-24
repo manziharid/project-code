@@ -1,11 +1,7 @@
-function Car() {
-  this.speed = 0;
-
-  this.speedUp = function (speed) {
-    this.speed = speed;
-    setTimeout(() => console.log(this.speed), 1000);
-  };
+function show() {
+  return (x) => x + arguments[1];
 }
 
-let car = new Car();
-car.speedUp(50); // 50;
+let display = show(10, 20);
+let result = display(5);
+console.log(result); // 15
