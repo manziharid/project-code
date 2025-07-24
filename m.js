@@ -1,3 +1,6 @@
-let add = (x, y) => x + y;
+let numbers = [4, 2, 6];
 
-console.log(add(10, 20)); // 30;
+numbers.sort(function (a, b) {
+  return b - a;
+});
+console.log(numbers); // [6,4,2]
