@@ -3,11 +3,12 @@ function Car() {
 
   this.speedUp = function (speed) {
     this.speed = speed;
+    let self = this;
     setTimeout(function () {
-      console.log(this.speed); // undefined
+      console.log(self.speed);
     }, 1000);
   };
 }
 
 let car = new Car();
-car.speedUp(50);
+car.speedUp(50); // 50;
