@@ -1,11 +1,9 @@
-function* forever() {
-    let index = 0;
-    while (true) {
-        yield index++;
-    }
+function* foo() { 
+    yield 1;
+    yield 2;
+    yield 3;
 }
 
-let f = forever();
-console.log(f.next()); // 0
-console.log(f.next()); // 1
-console.log(f.next()); // 2
+let f = foo();
+
+console.log(f.next());
