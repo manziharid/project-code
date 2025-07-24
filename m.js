@@ -1,6 +1,4 @@
-var iterator = numbers[Symbol.iterator]();
-
-console.log(iterator.next()); // Object {value: 1, done: false}
-console.log(iterator.next()); // Object {value: 2, done: false}
-console.log(iterator.next()); // Object {value: 3, done: false}
-console.log(iterator.next()); // Object {value: undefined, done: true}
+let odd  = [1, 3],
+    even = [2, 4];
+let all = odd.concat(even);
+console.log(all); // [1, 3, 2, 4]
