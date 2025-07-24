@@ -1,3 +1,8 @@
-class Stack {
+var numbers = [1, 2, 3];
+for (let num of numbers) {
+    console.log(num);
 }
-console.log([] instanceof Stack); // false
+
+// 1
+// 2
+// 3
