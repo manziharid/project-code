@@ -1,5 +1,5 @@
-const greeting = document.querySelector('#greeting');
-const username = document.querySelector('#username');
-username.addEventListener('keyup', () => {
-  greeting.textContent = 'Hello ' + this.value;
-});
+const counter = {
+  count: 0,
+  next: () => ++this.count,
+  current: () => this.count
+};
