@@ -1,4 +1,4 @@
-let numbers = [4, 2, 6];
-numbers.sort((a, b) => b - a);
+let names = ['John', 'Mac', 'Peter'];
+let lengths = names.map(name => name.length);
 
-console.log(numbers); // [6,4,2]
+console.log(lengths);
