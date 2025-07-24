@@ -1,8 +1,3 @@
-const createObject = (key, value) => {
-  return {
-    [key]: value,
-  };
-};
+let add = (x, y) => x + y;
 
-const person = createObject('name', 'John');
-console.log(person);
+console.log(add(10, 20)); // 30;
