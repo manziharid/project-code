@@ -1,5 +1,6 @@
-let evenNumbers = new Sequence(2, 10, 2);
-
-for (const num of evenNumbers) {
-    console.log(num);
+function* generate() {
+    console.log('invoked 1st time');
+    yield 1;
+    console.log('invoked 2nd time');
+    yield 2;
 }
