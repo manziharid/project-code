@@ -1,7 +1,4 @@
-function show() {
-  return (x) => x + arguments[1];
+function dump(message) {
+  console.log(message);
 }
-
-let display = show(10, 20);
-let result = display(5);
-console.log(result); // 15
+console.log(dump.hasOwnProperty('prototype')); // true
