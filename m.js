@@ -8,3 +8,4 @@ const counter = {
     }
 };
 console.log(counter);
+console.log(counter.next()); // 1
