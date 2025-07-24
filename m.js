@@ -1,9 +1,6 @@
-function* foo() { 
-    yield 1;
-    yield 2;
-    yield 3;
+function* bar() {
+    yield;
 }
 
-let f = foo();
-
-console.log(f.next());
+let b = bar();
+console.log(b.next()); 
