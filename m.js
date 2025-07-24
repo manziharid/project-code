@@ -1,2 +1,5 @@
-let dump = message => console.log(message);
-console.log(dump.hasOwnProperty('prototype')); // false
+const greeting = document.querySelector('#greeting');
+const username = document.querySelector('#username');
+username.addEventListener('keyup', () => {
+  greeting.textContent = 'Hello ' + this.value;
+});
