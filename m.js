@@ -1,6 +1,6 @@
-let status = Symbol('status');
-let task = {
-    [status]: statuses.OPEN,
-    description: 'Learn ES6 Symbol'
-};
-console.log(task);
+class Stack {
+    static [Symbol.hasInstance](obj) {
+        return Array.isArray(obj);
+    }
+}
+console.log([] instanceof Stack); // true
