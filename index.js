@@ -1,6 +1,7 @@
 
 /*function printme() {
-    console.log('hy');
+   
+main(); console.log('hy');
 }
 function test() {
     console.log('hebdn');
@@ -23,10 +24,30 @@ function main() {
     f2();
     
 }
-main();*/
 
-const promises= new Promise((resolve, reject) {
+/*const promises= new Promise((resolve, reject) {
      resolve('I am resolve problems!')   
 }
 
-promises.then(result=> console.log(result)) ;
+promises.then(result=> console.log(result)) ; */
+
+function f1() {
+    console.log('f1');
+    
+ }
+ function f2() {
+    console.log('f2');
+    
+ }
+function main() {
+    console.log('main');
+    setTimeout(f1, 0);
+    new Promise(function(resolve, reject) {
+     resolve('I am resolve problems!')   
+}).then(resolve=> console.log(resolve));
+
+
+    f2();
+    
+}
+main();
