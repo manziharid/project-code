@@ -5,5 +5,5 @@ function test() {
     console.log('hebdn');
     
 }
- setTimeout(printme, 2000);
+ km(printme, 2000);
  test();
