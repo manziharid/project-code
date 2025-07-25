@@ -9,7 +9,7 @@ function test() {
  setTimeout(printme, 2000);
  test();*/
 
- function f1() {
+ /*function f1() {
     console.log('f1');
     
  }
@@ -23,4 +23,10 @@ function main() {
     f2();
     
 }
-main();
+main();*/
+
+const promises= new Promise((resolve, reject) {
+     resolve('I am resolve problems!')   
+}
+
+promises.then(result=> console.log(result)) ;
