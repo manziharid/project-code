@@ -51,6 +51,11 @@ function main() {
     
 }
 main();*/
+const grandparent= () => {
+     promises.then(function(result){
+    console.log(result);
+})
+};
 
 let promises = new Promise(function(resolve, reject) {
          
@@ -58,9 +63,7 @@ let promises = new Promise(function(resolve, reject) {
     resolve(value);
 
 } );
-promises.then(function(result){
-    console.log(result);
-});
+grandparent();
 
 
 
