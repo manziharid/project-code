@@ -29,7 +29,7 @@ function main() {
      resolve('I am resolve problems!')   
 }
 
-promises.then(result=> console.log(result)) ; */
+promises.then(result=> console.log(result)) ; 
 
 function f1() {
     console.log('f1');
@@ -50,4 +50,20 @@ function main() {
     f2();
     
 }
-main();
+main();*/
+
+let promises = new Promise(function(resolve, reject) {
+         
+    let value = 'water';
+    resolve(value);
+
+} );
+
+
+
+
+let promisesError = new Promise(function(resolve, reject) {
+    
+    reject(new Error("Disaster"));
+
+} );
