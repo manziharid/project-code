@@ -107,3 +107,15 @@ foo(function(){
     console.log('dhcn');
     
 });
+
+
+orderPizza('veg','cheese berbeque');
+
+function orderPizza(type, name) {
+    console.log(`pizza ${type} ${name} is ordered`);
+    setTimeout(() =>{
+        console.log(`pizza ${type} ${name} is ready`);
+        
+        
+    }, 3000);
+}
