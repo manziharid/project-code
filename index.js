@@ -76,7 +76,14 @@ let promisesError = new Promise(function(resolve, reject) {
 
 } );
 const grandparentcooking= () => {
-    promisesError.catch(function(Error){
+    promisesError
+    .then(function(result) {
+        console.log(`cooking starts with ${result}`);
+        
+    })
+     
+    
+    .catch(function(Error){
         console.log(`OMG ${Error.message}`);
         
     })
