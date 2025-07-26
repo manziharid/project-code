@@ -68,7 +68,7 @@ grandparent();*/
 
 
 
-let promisesError = new Promise(function(resolve, reject) {
+/*let promisesError = new Promise(function(resolve, reject) {
     setTimeout(function() {
         //reject(new Error("jack fell down and ........"));
         resolve('water');
@@ -89,4 +89,12 @@ const grandparentcooking= () => {
         
     })
 };
-grandparentcooking();
+grandparentcooking();*/
+
+
+function foo(num) {
+    console.log(`foo ${num}`);
+    
+    
+};
+foo(2);
