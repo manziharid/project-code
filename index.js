@@ -58,12 +58,15 @@ let promises = new Promise(function(resolve, reject) {
     resolve(value);
 
 } );
+promises.then(function(result){
+    console.log(result);
+});
 
 
 
 
-let promisesError = new Promise(function(resolve, reject) {
+//let promisesError = new Promise(function(resolve, reject) {
     
-    reject(new Error("Disaster"));
+  //  reject(new Error("Disaster"));
 
-} );
+// } );
