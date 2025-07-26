@@ -51,7 +51,7 @@ function main() {
     
 }
 main();*/
-const grandparent= () => {
+/*const grandparent= () => {
      promises.then(function(result){
     console.log(`cooking with ${result}`);
 })
@@ -63,13 +63,22 @@ let promises = new Promise(function(resolve, reject) {
     resolve(value);
 
 } );
-grandparent();
+grandparent();*/
 
 
 
 
-//let promisesError = new Promise(function(resolve, reject) {
+let promisesError = new Promise(function(resolve, reject) {
+    setTimeout(function() {
+        reject(new Error("jack fell down and ........"));
+    }, 3000);
     
-  //  reject(new Error("Disaster"));
 
-// } );
+} );
+const grandparentcooking= () => {
+    promisesError.catch(function(Error){
+        console.log(`OMG ${Error.message}`);
+        
+    })
+};
+grandparentcooking();
