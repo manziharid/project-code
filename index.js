@@ -102,7 +102,7 @@ grandparentcooking();*/
 function foo(bar) {
     bar();
     
-};
+}
 foo(function(){
     console.log('dhcn');
     
