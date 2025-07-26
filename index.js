@@ -92,9 +92,18 @@ const grandparentcooking= () => {
 grandparentcooking();*/
 
 
-function foo(num) {
-    console.log(`foo ${num}`);
+//function foo(num) {
+  //  console.log(`foo ${num}`);
     
+    
+//};
+//foo(2);
+
+function foo(bar) {
+    bar();
     
 };
-foo(2);
+foo(function(){
+    console.log('dhcn');
+    
+});
