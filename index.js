@@ -53,7 +53,7 @@ function main() {
 main();*/
 const grandparent= () => {
      promises.then(function(result){
-    console.log(result);
+    console.log(`cooking with ${result}`);
 })
 };
 
