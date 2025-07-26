@@ -70,7 +70,8 @@ grandparent();*/
 
 let promisesError = new Promise(function(resolve, reject) {
     setTimeout(function() {
-        reject(new Error("jack fell down and ........"));
+        //reject(new Error("jack fell down and ........"));
+        resolve('water');
     }, 3000);
     
 
